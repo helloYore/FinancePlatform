@@ -54,10 +54,10 @@ public class R {
         return r;
     }
     /**
-     * 设置特定的响应message
+     * 设置特定的响应message 因为本来就有setMessage了，所以要改个名字 否则有问题
      * @return
      * */
-    public R setMessage(String message){
+    public R message(String message){
         this.setMessage(message);
         return this;
     }
@@ -65,7 +65,7 @@ public class R {
      * 设置特定的响应code
      * @return
      * */
-    public R setCode(Integer code){
+    public R code(Integer code){
         this.setCode(code);
         return this;
     }

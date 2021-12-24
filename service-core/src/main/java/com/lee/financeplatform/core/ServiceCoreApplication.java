@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringBootApplication
 //也能扫瞄到其他包的一些内容
-@ComponentScan({"com.lee.financeplatform"})
+@ComponentScan({"com.lee.financeplatform","com.lee.common"})
 public class ServiceCoreApplication {
     public static void main(String[] args) {
         SpringApplication.run(ServiceCoreApplication.class, args);
