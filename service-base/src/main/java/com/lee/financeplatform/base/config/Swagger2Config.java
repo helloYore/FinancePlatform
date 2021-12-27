@@ -46,7 +46,7 @@ public class Swagger2Config {
     private ApiInfo adminApiInfo(){
         return new ApiInfoBuilder()
                 .title("金融平台后台管理系统API文档")
-                .description("该文档描述了【就骗你】金融平台后台管理系统的各个模块的接口的调用方式")
+                .description("该文档描述了【小白】金融平台后台管理系统的各个模块的接口的调用方式")
                 .version("0.1")
                 .contact(new Contact("helloYore", "Http://helloyore.com","helloyore@outlook.com"))
                 .build();
@@ -54,7 +54,7 @@ public class Swagger2Config {
     private ApiInfo webApiInfo(){
         return new ApiInfoBuilder()
                 .title("金融平台网站前台API文档")
-                .description("该文档描述了【就骗你】金融平台网站前台的各个模块的接口的调用方式")
+                .description("该文档描述了【小白】金融平台网站前台的各个模块的接口的调用方式")
                 .version("0.1")
                 .contact(new Contact("helloYore", "Http://helloyore.com","helloyore@outlook.com"))
                 .build();

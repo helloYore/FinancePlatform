@@ -25,7 +25,7 @@ import java.util.List;
  * @since 2021-12-23
  */
 @Api(tags = "积分等级管理") //Swagger2中的说明，更清晰
-@CrossOrigin //因为要做前后端的联调，所以用这个注解做一个跨域处理
+@CrossOrigin //因为要做前后端的联调，所以用这个注解做一个跨域处理 加上后前端就可以调了
 @RestController
 @RequestMapping("/admin/core/integralGrade") //因为在com.lee.f**.core下层所以用的是core 而且是admin下
 @Slf4j

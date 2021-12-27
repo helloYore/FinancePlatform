@@ -27,7 +27,7 @@ public class Dict implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "id")
-      @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     @ApiModelProperty(value = "上级id")
@@ -43,7 +43,7 @@ public class Dict implements Serializable {
     private String dictCode;
 
     @ApiModelProperty(value = "创建时间")
-    private LocalDateTime createTime;
+    private LocalDateTime createTime; //代替了 Date    “createTime”：“2020-01-01 01:01:01”
 
     @ApiModelProperty(value = "更新时间")
     private LocalDateTime updateTime;
@@ -52,6 +52,5 @@ public class Dict implements Serializable {
     @TableField("is_deleted")
     @TableLogic
     private Boolean deleted;
-
 
 }
