@@ -1,0 +1,30 @@
+server:
+  port: 8120 # 服务端口
+
+spring:
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: service-sms # 服务名
+
+  #spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password: #默认为空
+    timeout: 3000ms #最大等待时间，超时则抛出异常，否则请求一直等待
+    lettuce:
+      pool:
+        max-active: 20  #最大连接数，负值表示没有限制，默认8
+        max-wait: -1    #最大阻塞等待时间，负值表示没限制，默认-1
+        max-idle: 8     #最大空闲连接，默认8
+        min-idle: 0     #最小空闲连接，默认0
+
+#容联云短信配置
+rckj:
+  accountSId: 8aaf07087de13e49017e015237cb07b5 #自己的accountSId
+  accountToken: 39ca9078fea0406a85ea7d7462f17dac #自己的accountToken
+  appId: 8aaf07087de13e49017e015238d107bc #自己的accountToken
+  serverIp: app.cloopen.com  #默认都是这个
+  serverPort: 8883  #默认都是这个

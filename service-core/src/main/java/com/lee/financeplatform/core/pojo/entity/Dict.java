@@ -53,4 +53,8 @@ public class Dict implements Serializable {
     @TableLogic
     private Boolean deleted;
 
+    //在数据库中其实没有这个字段，是表达逻辑概念的，跟物理表没有任何关系
+    @TableField(exist = false)
+    private boolean hasChildren;
+
 }
