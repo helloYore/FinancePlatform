@@ -20,11 +20,19 @@ spring:
         max-wait: -1    #最大阻塞等待时间，负值表示没限制，默认-1
         max-idle: 8     #最大空闲连接，默认8
         min-idle: 0     #最小空闲连接，默认0
-
-#容联云短信配置
-rckj:
-  accountSId: 8aaf07087de13e49017e015237cb07b5 #自己的accountSId
-  accountToken: 39ca9078fea0406a85ea7d7462f17dac #自己的accountToken
-  appId: 8aaf07087de13e49017e015238d107bc #自己的accountToken
-  serverIp: app.cloopen.com  #默认都是这个
-  serverPort: 8883  #默认都是这个
+#
+##短信配置容联云
+#rckj:
+#  accountSId: 8aaf07087de13e49017e015237cb07b5 #自己的accountSId
+#  accountToken: 39ca9078fea0406a85ea7d7462f17dac #自己的accountToken
+#  appId: 8aaf07087de13e49017e015238d107bc #自己的accountToken
+#  serverIp: app.cloopen.com  #默认都是这个
+#  serverPort: 8883  #默认都是这个
+#阿里云短信
+aliyun:
+  sms:
+    region-id: cn-hangzhou
+    key-id: LTAI4G5Svnb2TWBMuKnNT6jY
+    key-secret: N7v6R4V3EJ1SGDZlsqtqo8QyVVMmtQ
+    template-code: SMS_96695065
+    sign-name: 谷粒
